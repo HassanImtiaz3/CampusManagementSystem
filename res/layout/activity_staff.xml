@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stloadData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".studentActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="Campus Management System"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/stfname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/stfname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/stlname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/stlname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/stphone"
+        app:layout_constraintStart_toStartOf="@+id/stfname"
+        app:layout_constraintTop_toBottomOf="@+id/stfname" />
+
+    <EditText
+        android:id="@+id/stphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ststaffId"
+        app:layout_constraintStart_toStartOf="@+id/stlname"
+        app:layout_constraintTop_toBottomOf="@+id/stlname" />
+
+    <EditText
+        android:id="@+id/ststaffId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Staff Id"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/stsaveData"
+        app:layout_constraintStart_toStartOf="@+id/stphone"
+        app:layout_constraintTop_toBottomOf="@+id/stphone" />
+
+
+
+
+    <Button
+        android:id="@+id/stsaveData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="21dp"
+        android:text="Save"
+        android:background="#7cff01"
+        app:layout_constraintBottom_toTopOf="@+id/stshowData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ststaffId" />
+
+    <Button
+        android:id="@+id/stshowData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="121dp"
+        android:text="Show"
+        android:background="#7cff01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stsaveData" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

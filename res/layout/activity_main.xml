@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070707"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Campus Management System"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="10pt"
+        android:textStyle="italic"
+        android:layout_marginTop="30dp"
+        >
+
+    </TextView>
+
+    <Button
+        android:id="@+id/studentBtn"
+        android:layout_width="146dp"
+        android:layout_height="152dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:text="Students"
+        android:textColor="@color/white"
+        android:textSize="8pt"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/facultyBtn"
+        android:layout_width="146dp"
+        android:layout_height="152dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:text="Faculty"
+        android:textColor="@android:color/white"
+        android:textSize="8pt"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/staffBtn"
+        android:layout_width="146dp"
+        android:layout_height="152dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:text="Staff"
+        android:textColor="@android:color/white"
+        android:textSize="8pt"
+        android:textStyle="italic" />
+
+
+
+
+</LinearLayout>

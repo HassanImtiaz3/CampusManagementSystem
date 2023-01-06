@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".facultyActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="310dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="51dp"
+        android:gravity="center"
+        android:text="Campus Management System"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/facName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/facName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Faculty Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/deptName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/deptName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Department Name"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buildingName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facName" />
+
+    <EditText
+        android:id="@+id/buildingName"
+        android:layout_width="0dp"
+        android:textColor="@color/white"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="Building Name"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/facHead"
+        app:layout_constraintEnd_toEndOf="@+id/facHead"
+        app:layout_constraintStart_toStartOf="@+id/deptName"
+        app:layout_constraintTop_toBottomOf="@+id/deptName" />
+
+    <EditText
+        android:id="@+id/facHead"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="29dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="Faculty Head"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/facNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buildingName" />
+
+    <EditText
+        android:id="@+id/facNumber"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="28dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="Total Faculty Member"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/facPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facHead" />
+
+    <EditText
+        android:id="@+id/facPhone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:backgroundTint="@color/white"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/facData"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facNumber" />
+
+    <Button
+        android:id="@+id/facData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="11dp"
+        android:background="#7cff01"
+        android:text="Save"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/facShow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facPhone" />
+
+    <Button
+        android:id="@+id/facShow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="11dp"
+        android:background="#7cff01"
+        android:text="Show"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facData" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
